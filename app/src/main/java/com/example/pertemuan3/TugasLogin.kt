@@ -60,4 +60,6 @@ fun TugasLogin(modifier: Modifier){
         color = Color.Yellow,
         fontWeight = FontWeight.Bold
     )
+
+    Spacer(modifier = Modifier.height(8.dp))
 }
