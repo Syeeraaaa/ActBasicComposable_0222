@@ -30,4 +30,9 @@ fun TugasLogin(modifier: Modifier){
         color = Color.DarkGray,
         fontWeight = FontWeight.Bold
     )
+    Text(
+        text = "Ini adalah halam login,",
+        fontSize = 16.sp,
+        color = Color.Black
+    )
 }
