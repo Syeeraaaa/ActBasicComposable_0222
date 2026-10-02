@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.ui.text.font.Font
 
 @Composable
 fun TugasLogin(modifier: Modifier){
@@ -44,5 +45,13 @@ fun TugasLogin(modifier: Modifier){
         painter = logo,
         contentDescription = "Logo UMY",
         modifier = Modifier.size(200.dp)
+    )
+    Spacer(modifier = Modifier.height(20.dp))
+
+    Text(
+        text = "Nama",
+        fontSize = 20.sp,
+        color = Color.Red,
+        fontWeight = FontWeight.Bold
     )
 }
