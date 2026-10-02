@@ -25,8 +25,8 @@ import androidx.compose.ui.text.font.Font
 
 @Composable
 fun TugasLogin(modifier: Modifier){
-    val logo = painterResource(id = R.drawable.LogoUmy)
-    val kartunCewe = painterResource(id = R.drawable.kartunCewe)
+    val logo = painterResource(id = R.drawable.logo)
+    val kartunCewe = painterResource(id = R.drawable.kartuncewe)
 
     Column(modifier = Modifier
         .fillMaxSize()
@@ -41,7 +41,7 @@ fun TugasLogin(modifier: Modifier){
         fontWeight = FontWeight.Bold
     )
     Text(
-        text = "Ini adalah halam login,",
+        text = "Ini adalah halaman login,",
         fontSize = 16.sp,
         color = Color.Black
     )
