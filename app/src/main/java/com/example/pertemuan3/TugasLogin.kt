@@ -25,7 +25,7 @@ import androidx.compose.ui.text.font.Font
 
 @Composable
 fun TugasLogin(modifier: Modifier){
-    val logo = painterResource(id = R.drawable. logo)
+    val logo = painterResource(id = R.drawable.LogoUmy)
     val kartunCewe = painterResource(id = R.drawable.kartunCewe)
 
     Column(modifier = Modifier
