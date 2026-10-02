@@ -2,6 +2,7 @@ package com.example.pertemuan3
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -27,68 +28,82 @@ import androidx.compose.ui.text.font.Font
 fun TugasLogin(modifier: Modifier){
     val logo = painterResource(id = R.drawable.logo)
     val kartunCewe = painterResource(id = R.drawable.kartuncewe)
-
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .padding(20.dp),
-        horizontalAlignment = Alignment.CenterHorizontally) {
-
-    }
-    Text(
-        text = "Login",
-        fontSize = 40.sp,
-        color = Color.DarkGray,
-        fontWeight = FontWeight.Bold
-    )
-    Text(
-        text = "Ini adalah halaman login,",
-        fontSize = 16.sp,
-        color = Color.Black
-    )
-    Spacer(modifier = Modifier.height(20.dp))
-    Image(
-        painter = logo,
-        contentDescription = "Logo UMY",
-        modifier = Modifier.size(200.dp)
-    )
-    Spacer(modifier = Modifier.height(20.dp))
-
-    Text(
-        text = "Nama",
-        fontSize = 20.sp,
-        color = Color.Red,
-        fontWeight = FontWeight.Bold
-    )
-    Text(
-        text = "Syeera Silvia Erby",
-        fontSize = 20.sp,
-        color = Color.Yellow,
-        fontWeight = FontWeight.Bold
-    )
-
-    Spacer(modifier = Modifier.height(8.dp))
-
-    Text(
-        text = "202401402222",
-        fontSize = 24.sp,
-        color = Color.Green,
-        fontWeight = FontWeight.Bold
-    )
-
-    Spacer(modifier = Modifier.height(30.dp))
-
     Box(
-        modifier = Modifier
-            .size(200.dp)
-            .clip(CircleShape)
-            .background(Color.LightGray),
-        contentAlignment = Alignment.Center
-    ){
+        modifier = modifier.fillMaxSize()
+    ) {
+        //background
         Image(
-            painter = kartunCewe,
-            contentDescription = "kartunCewe",
-            contentScale = ContentScale.Crop,
-            modifier = Modifier.fillMaxSize()
+            painter = painterResource(id = R.drawable.background),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
         )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+        Text(
+            text = "Login",
+            fontSize = 40.sp,
+            color = Color.White,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = "Ini adalah halaman login,",
+            fontSize = 16.sp,
+            color = Color.Blue
+        )
+        Spacer(modifier = Modifier.height(20.dp))
+        Image(
+            painter = logo,
+            contentDescription = "Logo UMY",
+            modifier = Modifier.size(130.dp)
+                .clip(CircleShape)
+        )
+        Spacer(modifier = Modifier.height(20.dp))
+
+        Text(
+            text = "Nama",
+            fontSize = 20.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = "Syeera Silvia Erby",
+            fontSize = 20.sp,
+            color = Color.Yellow,
+            fontWeight = FontWeight.Bold
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Text(
+            text = "202401402222",
+            fontSize = 24.sp,
+            color = Color.Green,
+            fontWeight = FontWeight.Bold
+        )
+
+        Spacer(modifier = Modifier.height(30.dp))
+
+        Box(
+            modifier = Modifier
+                .size(300.dp)
+                .clip(CircleShape)
+                .background(Color.LightGray),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = kartunCewe,
+                contentDescription = "kartunCewe",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+            )
+        }
+    }
     }
 }
