@@ -26,7 +26,7 @@ import androidx.compose.ui.text.font.Font
 @Composable
 fun TugasLogin(modifier: Modifier){
     val logo = painterResource(id = R.drawable. logo)
-    val background = painterResource(id = R.drawable.background)
+    val kartunCewe = painterResource(id = R.drawable.kartunCewe)
 
     Column(modifier = Modifier
         .fillMaxSize()
@@ -85,7 +85,7 @@ fun TugasLogin(modifier: Modifier){
         contentAlignment = Alignment.Center
     ){
         Image(
-            painter = kartun,
+            painter = kartunCewe,
             contentDescription = "kartunCewe",
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize()
