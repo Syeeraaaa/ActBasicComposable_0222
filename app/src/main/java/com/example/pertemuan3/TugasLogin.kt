@@ -54,4 +54,10 @@ fun TugasLogin(modifier: Modifier){
         color = Color.Red,
         fontWeight = FontWeight.Bold
     )
+    Text(
+        text = "Syeera Silvia Erby",
+        fontSize = 20.sp,
+        color = Color.Yellow,
+        fontWeight = FontWeight.Bold
+    )
 }
