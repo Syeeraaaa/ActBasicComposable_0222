@@ -1,6 +1,7 @@
 package com.example.pertemuan3
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -12,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.height
 
 @Composable
 fun TugasLogin(modifier: Modifier){
@@ -35,5 +37,6 @@ fun TugasLogin(modifier: Modifier){
         fontSize = 16.sp,
         color = Color.Black
     )
+    Spacer(modifier = Modifier.height(20.dp))
 
 }
