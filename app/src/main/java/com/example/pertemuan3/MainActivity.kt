@@ -20,7 +20,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TugasLogin(modifier = Modifier.padding(paddingValues = innerPadding)
+                    TugasLogin(modifier = Modifier
+                        .fillMaxSize()
+                        .padding(paddingValues = innerPadding)
                     )
                 }
             }
